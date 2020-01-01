@@ -40,6 +40,9 @@ header {
   max-width: 200px;
   color: white;
   width: 50%;
+  img {
+    width: 100%;
+  }
 }
 .categories,
 .leftSide {
