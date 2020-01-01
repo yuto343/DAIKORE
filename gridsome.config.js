@@ -7,6 +7,7 @@
 module.exports = {
   siteName: "ダイジナノハコレカラ",
   siteDescription: "Yuto Nakanoのブログ。",
+  titleTemplate: "%s | ダイジナノハコレカラ",
 
   templates: {
     Post: "/:slug",

@@ -1,5 +1,8 @@
 <template>
-  <div class="post-card content-box" :class="{ 'post-card--has-poster': post.poster }">
+  <div
+    class="post-card content-box"
+    :class="{ 'post-card--has-poster': post.poster }"
+  >
     <div class="post-card__header">
       <g-image
         alt="Cover image"
@@ -9,7 +12,7 @@
       />
     </div>
     <div class="post-card__content">
-      <p>{{post.date}}</p>
+      <p>{{ post.date }}</p>
       <h2 class="post-card__title" v-html="post.title" />
       <p class="post-card__description" v-html="post.description" />
 

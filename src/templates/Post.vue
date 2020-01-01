@@ -2,13 +2,17 @@
   <Layout>
     <div class="post-title">
       <h1 class="post-title__text">{{ $page.post.title }}</h1>
-      <p>{{$page.post.date}}</p>
+      <p>{{ $page.post.date }}</p>
       <PostMeta :post="$page.post" />
     </div>
 
     <div class="post content-box">
       <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
+        <g-image
+          alt="Cover image"
+          v-if="$page.post.cover_image"
+          :src="$page.post.cover_image"
+        />
       </div>
 
       <div class="post__content" v-html="$page.post.content" />
@@ -39,6 +43,10 @@ export default {
         {
           name: "description",
           content: this.$page.post.description
+        },
+        {
+          name: "title",
+          content: this.$page.post.title + " | ダイジナノハコレカラ"
         }
       ]
     };
@@ -61,7 +69,7 @@ query Post ($id: ID!) {
     }
     description
     content
-    cover_image (width: 1500, blur: 10)
+    cover_image (width: 770, height: 380, blur: 10,quality: 100)
   }
 }
 </page-query>

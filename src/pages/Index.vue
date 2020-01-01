@@ -4,7 +4,11 @@
 
     <!-- List posts -->
     <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
+      <PostCard
+        v-for="edge in $page.posts.edges"
+        :key="edge.node.id"
+        :post="edge.node"
+      />
     </div>
   </Layout>
 </template>
@@ -20,7 +24,7 @@ query {
         date (format: "YYYY.MM.DD")
         timeToRead
         description
-        cover_image (width: 770, height: 380, blur: 10)
+        cover_image (width: 770, height: 380, blur: 10,quality: 100)
         path
         tags {
           id
@@ -41,7 +45,7 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: "ホーム"
+    title: "HOME"
   }
 };
 </script>
