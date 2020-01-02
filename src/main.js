@@ -26,4 +26,16 @@ export default function(Vue, { router, head, isClient }) {
     name: "og:title",
     content: "ダイジナノハコレカラ"
   });
+  head.meta.push({
+    name: "og:site_name",
+    content: "ダイジナノハコレカラ"
+  });
+  head.meta.push({
+    name: "og:type",
+    content: "website"
+  });
+  head.meta.push({
+    name: "og:description",
+    content: "YutoNakanoの個人ブログです。"
+  });
 }
