@@ -61,8 +61,12 @@ export default {
   methods: {
     ogImage() {
       if (this.$page.post.cover_image) {
-        console.log(this.$page.post.cover_image.src);
-        return this.$page.post.cover_image.src;
+        const URL = this.$page.post.cover_image.src;
+        const changeURL = URL.replace(
+          "/assets/static",
+          "https://yutonakano.com"
+        );
+        return changeURL;
       } else {
         return "https://yutonakano.com/ogp.png";
       }
