@@ -64,7 +64,7 @@ export default {
         const URL = this.$page.post.cover_image.src;
         const changeURL = URL.replace(
           "/assets/static",
-          "https://yutonakano.com"
+          "https://yutonakano.com/assets/static"
         );
         return changeURL;
       } else {
