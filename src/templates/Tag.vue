@@ -4,7 +4,7 @@
 
     <div class="posts">
       <PostCard
-        v-for="edge in $page.tag.belongsTo.edges"
+        v-for="edge in publishedPost"
         :key="edge.node.id"
         :post="edge.node"
       />
@@ -16,15 +16,16 @@
 query Tag ($id: ID!) {
   tag (id: $id) {
     title
-    belongsTo {
+    belongsTo{
       edges {
-        node {
+        node  {
           ...on Post {
             title
             path
             date (format: "YYYY.MM.DD")
             timeToRead
             description
+            published
             content
           }
         }
@@ -43,6 +44,16 @@ export default {
   },
   metaInfo: {
     title: "TAGS"
+  },
+  computed: {
+    publishedPost() {
+      const Posts = this.$page.tag.belongsTo.edges;
+      console.log(Posts);
+      const publishedPost = Posts.filter(edge => {
+        return edge.node.published;
+      });
+      return publishedPost;
+    }
   }
 };
 </script>
