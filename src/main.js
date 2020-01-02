@@ -16,26 +16,32 @@ export default function(Vue, { router, head, isClient }) {
   });
   head.meta.push({
     name: "og:image",
+    key: "og:image",
     content: "https://yutonakano.com/ogp.png"
   });
   head.meta.push({
     name: "og:url",
+    key: "og:url",
     content: "https://yutonakano.com"
   });
   head.meta.push({
     name: "og:title",
+    key: "og:title",
     content: "ダイジナノハコレカラ"
   });
   head.meta.push({
     name: "og:site_name",
+    key: "og:site_name",
     content: "ダイジナノハコレカラ"
   });
   head.meta.push({
     name: "og:type",
+    key: "og:type",
     content: "website"
   });
   head.meta.push({
     name: "og:description",
+    key: "og:description",
     content: "YutoNakanoの個人ブログです。"
   });
 }

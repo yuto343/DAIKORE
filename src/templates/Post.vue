@@ -42,14 +42,31 @@ export default {
       meta: [
         {
           name: "description",
+          key: "description",
           content: this.$page.post.description
         },
         {
           name: "title",
-          content: this.$page.post.title + " | ダイジナノハコレカラ"
+          key: "title",
+          content: this.$page.post.title
+        },
+        {
+          name: "og:image",
+          key: "og:image",
+          content: this.ogImage()
         }
       ]
     };
+  },
+  methods: {
+    ogImage() {
+      if (this.$page.post.cover_image) {
+        console.log(this.$page.post.cover_image.src);
+        return this.$page.post.cover_image.src;
+      } else {
+        return "https://yutonakano.com/ogp.png";
+      }
+    }
   }
 };
 </script>
