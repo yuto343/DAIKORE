@@ -22,4 +22,8 @@ export default function(Vue, { router, head, isClient }) {
     name: "og:url",
     content: "https://yutonakano.com"
   });
+  head.meta.push({
+    name: "og:title",
+    content: "ダイジナノハコレカラ"
+  });
 }
