@@ -69,6 +69,7 @@ export default {
     };
   },
   methods: {
+    //create og:image url from cover_image.src
     ogImage() {
       if (this.$page.post.cover_image) {
         const URL = this.$page.post.cover_image.src;
