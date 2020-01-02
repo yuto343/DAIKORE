@@ -4,7 +4,7 @@
       p(v-if="!isTop") < 戻る
     .logo
       g-link(to="/")
-        img(src="../assets/images/daikore.svg")
+        g-image(src="../assets/images/daikore.png")
     .categories
       ToggleTheme
 

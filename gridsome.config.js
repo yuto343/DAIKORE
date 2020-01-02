@@ -51,5 +51,10 @@ module.exports = {
       anchorClassName: "icon icon-link",
       plugins: ["@gridsome/remark-prismjs"]
     }
+  },
+  chainWebpack: config => {
+    const svgRule = config.module.rule("svg");
+    svgRule.uses.clear();
+    svgRule.use("vue-svg-loader").loader("vue-svg-loader");
   }
 };
