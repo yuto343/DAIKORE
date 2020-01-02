@@ -46,9 +46,19 @@ export default {
           content: this.$page.post.description
         },
         {
+          name: "og:description",
+          key: "og:description",
+          content: this.$page.post.description
+        },
+        {
           name: "title",
           key: "title",
           content: this.$page.post.title
+        },
+        {
+          name: "og:title",
+          key: "og:title",
+          content: this.$page.post.title + "| ダイジナノハコレカラ"
         },
         {
           name: "og:image",
