@@ -15,7 +15,11 @@ export default function(Vue, { router, head, isClient }) {
     content: "summary_large_image"
   });
   head.meta.push({
-    name: "og:url",
+    name: "og:image",
     content: "https://yutonakano.com/ogp.png"
+  });
+  head.meta.push({
+    name: "og:url",
+    content: "https://yutonakano.com"
   });
 }
