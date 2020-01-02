@@ -42,7 +42,7 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: "# " + this.$page.tag.title
+    title: "TAGS"
   }
 };
 </script>
