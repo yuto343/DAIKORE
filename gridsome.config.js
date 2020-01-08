@@ -40,6 +40,12 @@ module.exports = {
           /* Options for `pug-loader` */
         }
       }
+    },
+    {
+      use: "@gridsome/plugin-google-analytics",
+      options: {
+        id: "UA-136400403-1"
+      }
     }
   ],
 
