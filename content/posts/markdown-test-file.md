@@ -45,11 +45,11 @@ closing hashes don't even need to match the number of hashes
 used to open the header. (The number of opening hashes
 determines the header level.)
 
-### Images
+<!-- ### Images
 
 Images are added with `![Image Alt](./images/image.jpg)`
 
-![Image](./images/alexandr-podvalny-220262-unsplash.jpg)
+![Image](./images/alexandr-podvalny-220262-unsplash.jpg) -->
 
 ### Blockquotes
 
