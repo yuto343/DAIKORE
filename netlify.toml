@@ -3,3 +3,4 @@
 
   [plugins.inputs]
     config = "./.htmlvalidate.json"
+    ext = "html"
