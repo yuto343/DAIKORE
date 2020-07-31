@@ -1,5 +1,5 @@
 [[plugins]]
-  package = "netlify-plugin-html-validate"
+  package = "netlify-plugin-minify-html"
 
   [plugins.inputs]
     ext = "html"
