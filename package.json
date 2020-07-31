@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "lint": "html-validate --config .htmlvalidate.json --ext html dist"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
