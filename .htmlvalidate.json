@@ -1,0 +1,8 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "wcag/h36": "0",
+    "wcag/h37": "1",
+    "wcag/h30": "1"
+  }
+}
