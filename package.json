@@ -12,6 +12,7 @@
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.0",
     "gridsome": "^0.7.0",
+    "html-validate": "^3.0.0",
     "netlify-plugin-html-validate": "^0.1.1",
     "netlify-plugin-minify-html": "^0.2.3"
   },
