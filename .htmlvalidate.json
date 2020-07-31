@@ -2,8 +2,8 @@
   "extends": ["html-validate:recommended"],
   "rules": {
     "wcag/h36": "warn",
-    "wcag/h37": "off",
-    "wcag/h30": "off",
+    "wcag/h37": "warn",
+    "wcag/h30": "warn",
     "no-redundant-role": "warn"
   }
 }
