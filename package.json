@@ -5,7 +5,8 @@
     "build": "gridsome build",
     "dev": "gridsome develop",
     "explore": "gridsome explore",
-    "lint": "html-validate --config .htmlvalidate.json --ext html dist"
+    "lint": "html-validate --config .htmlvalidate.json --ext html dist/employee --rule void:0 dist/employee/index.html",
+    "help": "html-validate -h"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",

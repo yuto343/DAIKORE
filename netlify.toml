@@ -1,6 +1,7 @@
 [[plugins]]
-  package = "netlify-plugin-html-validate"
+  package = "/plugins/netlify-html-validate"
 
   [plugins.inputs]
     config = ".htmlvalidate.json"
     ext = "html"
+    dir = "employee"

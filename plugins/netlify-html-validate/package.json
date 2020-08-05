@@ -1,0 +1,31 @@
+{
+  "name": "netlify-plugin-html-validate",
+  "version": "0.1.1",
+  "description": "Netlify plugin for post-build validation of HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preversion": "if [[ \"$(git rev-parse --abbrev-ref HEAD)\" != \"master\" ]]; then echo \"Not on master\" && exit 1; fi",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverroick/netlify-plugin-html-validate.git"
+  },
+  "keywords": [
+    "netlify",
+    "plugin",
+    "netlify-plugin",
+    "html",
+    "validation"
+  ],
+  "author": "Oliver Roick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oliverroick/netlify-plugin-html-validate/issues"
+  },
+  "homepage": "https://github.com/oliverroick/netlify-plugin-html-validate#readme",
+  "dependencies": {
+    "html-validate": "^2.23.0"
+  }
+}
