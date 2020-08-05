@@ -4,4 +4,4 @@
   [plugins.inputs]
     config = ".htmlvalidate.json"
     ext = "html"
-    dir = "employee"
+    dir = "employee,hello-world"
